@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadPdfActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/RL_upload_pdf_layout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/purple_700">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:id="@+id/textView_upload_pdf_head"
+                    android:text="Upload your pdf here"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select a pdf to upload"
+                    android:layout_below="@id/textView_upload_pdf_head"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-70dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/white"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/imageView_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:padding="15dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/border"
+                    android:src="@drawable/ic_upload_pdf"/>
+
+                <TextView
+                    android:id="@+id/textView_upload_pdf_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter the pdf name here*"
+                    android:textSize="16sp"
+                    android:padding="6dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                    android:layout_below="@id/imageView_pdf"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView_upload_pdf_name"
+                    android:id="@+id/editText_upload_pdf_name"
+                    android:background="@drawable/border"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"
+                    android:padding="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Enter pdf name here"/>
+
+                <Button
+                    android:id="@+id/button_choose_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editText_upload_pdf_name"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="70dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:text="Choose Pdf" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

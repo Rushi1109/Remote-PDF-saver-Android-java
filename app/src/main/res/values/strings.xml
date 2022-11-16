@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PDF STORAGE(beta)</string>
+    <string name="register"><u>Register</u></string>
+    <string name="click_here_to_reset"><u>Click here to Reset</u></string>
+    <string name="update_email"><u>Update Email?</u></string>
+    <string name="upload_profile_pic"><u>Upload profile pic?</u></string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewPdfActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/RL_upload_pdf_layout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/purple_700">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:id="@+id/textView_view_pdf_head"
+                    android:text="Uploaded PDFs..."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/textView_view_pdf_menu"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_below="@id/textView_view_pdf_head"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_view_pdf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/white"
+                android:padding="15dp">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="700dp"
+                    android:id="@+id/listView_view_pdf"
+                    android:padding="10dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
